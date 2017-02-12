@@ -1,3 +1,19 @@
-<h1>
+<!--<h1 appMyHeightLight>
   {{title}}
 </h1>
+
+<h1 [style.backgroundcolor]= " 'red' ">{{title}}</h1>
+
+<h1 [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{title}}</h1>
+
+<h1 [ngStyle]= "setStyles()">{{title}}</h1>
+
+<h2>DATE: {{ today | date :'dd/MM/yyyy'}}</h2>
+
+<h2>Nous sommes le {{ today | date : leFormat}}</h2>-->
+
+<nav>
+  <a routerLink="/" routerLinkActive="active">Home</a>
+  <a routerLink="/todo" routerLinkActive="active">TodoList</a>
+</nav>
+<router-outlet></router-outlet>
